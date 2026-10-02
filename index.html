@@ -46,7 +46,11 @@
   </div>
 <script>
 (function(){
-  var RIPIEGO = "https://www.google.com";   // usato solo se destinazione.txt non si legge
+  // Ripiego: usato solo se destinazione.txt non si riesce a leggere (rete
+  // ballerina, file cancellato per sbaglio). Deve essere la destinazione
+  // vera, mai una di prova: e' dove finisce il lettore quando qualcosa
+  // non va, ed e' il momento in cui sbagliare costa di piu'.
+  var RIPIEGO = "https://claude.ai/artifact/HTq3r5rP7jGRdsNFkmo6DW";
   var stato = document.getElementById('stato');
   var vai   = document.getElementById('vai');
   function porta(url){
